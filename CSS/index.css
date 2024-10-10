@@ -1,0 +1,58 @@
+/*NAVBAR*/
+
+header{
+    background-color: #0000003d;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: hsl(0, 4%, 50%);
+    text-decoration: none;
+    margin: 0 25px;
+    transition: 0.5s;
+
+}
+
+/*CARD INICIAL*/
+
+#inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    background-image: url(/ASSETS/IMG-INICIO.jfif);
+    background-size: 100% 100%;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.card-title{
+    font-size: 25px;
+    font-weight: bold;
+    color: #00000074;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#icono{
+    color: #00000074;
+    font-size: 40px;
+    margin: 0 25px;
+    text-decoration: none;
+}
+
