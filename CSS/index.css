@@ -1,57 +1,606 @@
-/*NAVBAR*/
+/*FONTS*/
 
-header{
-    background-color: #0000003d;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
 }
 
-.nav-item{
-    font-size: 18px;
+html{
+    scroll-behavior: smooth;
+}
+
+/*MENU ENCABEZADO*/
+
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 20px;
+    padding: 5px;
+    transition: .5s;  
+    text-decoration: none; 
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698;
+}
+
+.nav-responsive{
+    background-color: #1CB698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*SECCION INICIO*/
+
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38 .8), rgba(30,35,38, 1)), url(/ASSETS/fondo-img1.png);
+    background-size: cover;
+    height: 100vh;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.inicio .contenido-banner{
+
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #1CB698;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 15px;
+    font-size: 24px;
+    font-family: 'Righteous';
+}
+
+.inicio .contenido-banner h2{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 15px 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: #1CB698;
+}
+
+/* SOBRE MI*/
+
+.sobremi{
+    background-color: #1e2326;
+    color: #ffffff;
+    padding: 50px 20px;
+}
+
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .contenido-seccion p span{
+    color: #1CB698;
     font-weight: bold;
 }
 
-.nav-link{
-    color: hsl(0, 4%, 50%);
-    text-decoration: none;
-    margin: 0 25px;
-    transition: 0.5s;
+.sobremi .fila{
+    display: flex;
 }
 
-/*CARD INICIAL*/
-
-#inicio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    width: 100%;
-    background-image: url(/ASSETS/IMG-INICIO.jfif);
-    background-size: 100% 100%;
+.sobremi .fila .col{
+    width: 50%;
 }
 
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Right';
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul{
+    list-style: none;
+}
+
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+
+.sobremi .fila .col ul li span{
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
     border-radius: 5px;
 }
 
-.card-title{
-    font-size: 25px;
-    font-weight: bold;
-    color: #00000074;
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses{
+    width: 110px;
+    height: 100px;
+    background-color: #252a2e;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses:hover{
+    background-color: #1CB698;
+}
+
+.sobremi .fila .col .contenedor-intereses .intereses i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+
+/*SKILLS*/
+
+.skills{
+    background-color: #252a2e;
+    color: #ffffff;
+    padding: 50px 20px;
+}
+
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
     text-align: center;
-    margin-top: 10px;
+    padding: 20px 0;
 }
 
-#icono{
-    color: #00000074;
-    font-size: 40px;
-    margin: 0 25px;
-    text-decoration: none;
+.skills .fila{
+    display: flex;
 }
 
+.skills .fila .col{
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Right';
+    margin-bottom: 25px;
+}
+
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.skills .skill .progreso{
+    background-color: #1CB698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+/*SE REALIZA MEDIANTE JAVASCRIPT*/
+
+/*TECHNICAL SKILLS*/
+.skills .skill .javascript{
+    width: auto;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript{
+    0%{width: 0%;}
+    100%{width: 0%;}
+}
+
+.skills .skill .html{
+    width: auto;
+    animation: 2s html forwards;
+}
+@keyframes html{
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .css{
+    width: auto;
+    animation: 2s css forwards;
+}
+@keyframes css{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.skills .skill .github{
+    width: auto;
+    animation: 2s github forwards;
+}
+@keyframes github{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .figma{
+    width: auto;
+    animation: 2s figma forwards;
+}
+@keyframes figma{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.skills .skill .trello{
+    width: auto;
+    animation: 2s trello forwards;
+}
+@keyframes trello{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .canva{
+    width: auto;
+    animation: 2s canva forwards;
+}
+@keyframes canva{
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .c{
+    width: auto;
+    animation: 2s c forwards;
+}
+@keyframes c{
+    0%{width: 0%;}
+    100%{width: 10%;}
+}
+
+.skills .skill .mysql{
+    width: auto;
+    animation: 2s mysql forwards;
+}
+@keyframes mysql{
+    0%{width: 0%;}
+    100%{width: 25%;}
+}
+
+.skills .skill .microsoft{
+    width: auto;
+    animation: 2s microsoft forwards;
+}
+@keyframes microsoft{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .google{
+    width: auto;
+    animation: 2s google forwards;
+}
+@keyframes google{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+/*PROFECIONAL SKILLS*/
+.skills .skill .comunicacion{
+    width: auto;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .trabajo{
+    width: auto;
+    animation: 2s trabajo forwards;
+}
+@keyframes trabajo{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.skills .skill .creatividad{
+    width: auto;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .dedicacion{
+    width: auto;
+    animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion{
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .liderazgo{
+    width: auto;
+    animation: 2s liderazgo forwards;
+}
+@keyframes liderazgo{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .decisiones{
+    width: auto;
+    animation: 2s decisiones forwards;
+}
+@keyframes decisiones{
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+/*CURRICULUM*/
+
+.curriculum{
+    background-color: #1e2326;
+    color: #ffffff;
+    padding: 50px 20px;
+}
+
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+
+.curriculum .fila .col{
+    width: 49%;
+    padding: 10px 20px;
+}
+
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Right';
+    margin-bottom: 25px;
+}
+
+.curriculum .fila .izquierda{
+    border-right: 2px solid #252a2e;
+}
+
+.curriculum .fila .derecha{
+    border-left: 2px solid #252a2e;
+}
+
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252a2e;
+    position: relative;
+}
+
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item .casa{
+    color: #1CB698;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .fila .item .fecha{
+    color: #1CB698;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+
+.curriculum .fila .izq{
+    border-right: 2px solid #1CB698;
+    margin-right: 20px;
+}
+
+.curriculum .fila .der{
+    border-left: 2px solid #1CB698;
+    margin-left: 20px;
+}
+
+/*CONECTORES ENTRE EXPER Y EDUCA*/
+
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.curriculum .fila .item .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
