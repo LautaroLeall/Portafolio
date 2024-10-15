@@ -71,7 +71,7 @@ html{
 /*SECCION INICIO*/
 
 .inicio{
-    background: linear-gradient(to top, rgba(30,35,38 .8), rgba(30,35,38, 1)), url(/ASSETS/fondo-img1.png);
+    background: linear-gradient(to top, rgba(0,0,0, .5) 0, rgba(0,0,0, .5) 100%), url(/ASSETS/fondo-img2.jpg);
     background-size: cover;
     height: 100vh;
     color: hsl(0, 0%, 100%);
@@ -92,7 +92,7 @@ html{
 
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid #1CB698;
+    border: 4px solid #1CB698;
     display: block;
     width: 80%;
     margin: auto;
@@ -157,6 +157,18 @@ html{
 .sobremi .contenido-seccion p span{
     color: #1CB698;
     font-weight: bold;
+}
+
+.sobremi .contenido-seccion .personal{
+    border: 1px solid #1CB698;
+    width: 140px;
+    margin-top: -20px;
+}
+
+.sobremi .contenido-seccion .profecional{
+    border: 1px solid #1CB698;
+    width: 160px;
+    margin-top: 1px;
 }
 
 .sobremi .fila{
@@ -747,12 +759,12 @@ html{
 
 .contacto .col .info{
     position: absolute;
-    top: 60%;
     background-color: #252a2e;
     padding: 20px;
     width: 380px;
     left: 50%;
     transform: translate(-50% , -50%);
+    margin-top: 90px;
 }
 
 .contacto .col .info ul{
@@ -767,3 +779,53 @@ html{
     color: #1CB698;
     display: inline-block;
 }
+
+/*FOOTER*/
+
+footer{
+    background-color: #252a2e;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 3px 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .redes a:hover{
+    background-color: #1CB698;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/*SECCION RESPONSIVE*/
