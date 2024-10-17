@@ -154,9 +154,11 @@
                     </div>
                 </div>
             </div>
-            <button>
-                DESCARGAR CV <i class="fa-solid fa-download"></i>
+            <button id="descargar-cv">
                 <span class="overlay"></span>
+                <a href="/ASSETS/Lautaro Leal Del Prete CV .pdf" download="Curriculum-LautaroLeal.pdf">
+                    DESCARGAR CV <i class="fa-solid fa-download"></i>
+                </a>
             </button>
         </div>
     </section>
@@ -428,15 +430,18 @@
             <div class="fila">
                 <!--Formulario-->
                 <div class="col">
-                    <input type="text" maxlength="30" minlength="10" placeholder="Tu Nombre">
-                    <input type="text" maxlength="12" minlength="9" placeholder="Numero de Telefono">
-                    <input type="text" maxlength="30" min="12" placeholder="Direccion de Correo">
-                    <input type="text" maxlength="20" minlength="4" placeholder="Asunto">
-                    <textarea maxlength="350" cols="10" rows="5" placeholder="Tu Mensaje"></textarea>
-                    <button>Enviar Mensaje 
-                        <i class="fa-regular fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                    <form id="formulario">
+                        <input type="text" maxlength="25" minlength="8" placeholder="Tu Nombre">
+                        <input type="tel" maxlength="10" minlength="10" pattern="[0-9]*" title="Por favor, ingresa solo números" placeholder="Numero de Telefono"
+                        style="appearance: none; -webkit-appearance: none;">
+                        <input type="email" maxlength="25" min="12" placeholder="Direccion de Correo">
+                        <input type="text" maxlength="20" minlength="4" placeholder="Asunto">
+                        <textarea style="overflow-y: auto; resize: none;" maxlength="350" rows="7" placeholder="Tu Mensaje"></textarea>
+                        <button>Enviar Mensaje 
+                            <i class="fa-regular fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
                 </div>
                 <!--Mapa-->
                 <div class="col">
