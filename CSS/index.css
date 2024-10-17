@@ -336,7 +336,7 @@ html{
 
 /*TECHNICAL SKILLS*/
 .skills .skill .javascript{
-    width: auto;
+    width: 0%;
     animation: 2s javascript forwards;
 }
 @keyframes javascript{
@@ -345,7 +345,7 @@ html{
 }
 
 .skills .skill .html{
-    width: auto;
+    width: 0%;
     animation: 2s html forwards;
 }
 @keyframes html{
@@ -354,7 +354,7 @@ html{
 }
 
 .skills .skill .css{
-    width: auto;
+    width: 0%;
     animation: 2s css forwards;
 }
 @keyframes css{
@@ -363,7 +363,7 @@ html{
 }
 
 .skills .skill .github{
-    width: auto;
+    width: 0%;
     animation: 2s github forwards;
 }
 @keyframes github{
@@ -372,7 +372,7 @@ html{
 }
 
 .skills .skill .figma{
-    width: auto;
+    width: 0%;
     animation: 2s figma forwards;
 }
 @keyframes figma{
@@ -381,7 +381,7 @@ html{
 }
 
 .skills .skill .trello{
-    width: auto;
+    width: 0%;
     animation: 2s trello forwards;
 }
 @keyframes trello{
@@ -390,7 +390,7 @@ html{
 }
 
 .skills .skill .canva{
-    width: auto;
+    width: 0%;
     animation: 2s canva forwards;
 }
 @keyframes canva{
@@ -399,7 +399,7 @@ html{
 }
 
 .skills .skill .c{
-    width: auto;
+    width: 0%;
     animation: 2s c forwards;
 }
 @keyframes c{
@@ -408,7 +408,7 @@ html{
 }
 
 .skills .skill .mysql{
-    width: auto;
+    width: 0%;
     animation: 2s mysql forwards;
 }
 @keyframes mysql{
@@ -417,7 +417,7 @@ html{
 }
 
 .skills .skill .microsoft{
-    width: auto;
+    width: 0%;
     animation: 2s microsoft forwards;
 }
 @keyframes microsoft{
@@ -426,7 +426,7 @@ html{
 }
 
 .skills .skill .google{
-    width: auto;
+    width: 0%;
     animation: 2s google forwards;
 }
 @keyframes google{
@@ -853,7 +853,7 @@ footer .arriba{
         display: block !important; 
     }
     nav.responsive ul li{
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #0871e2;
         padding: 10px 0;
     }
 }
