@@ -39,8 +39,6 @@ function efectoHabilidades(){
         habilidades [10].classList.add("google");
     }
 }
-/******  0132346b-6dde-44d9-b4d8-ac83a65c4fa6  *******/
-
 
 //scrolling para aplicar la animacion en la barra de habilidades
 window.onscroll = function(){
