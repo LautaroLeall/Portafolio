@@ -657,17 +657,16 @@ html{
 }
 
 .portafolio .galeria .proyecto img{
-    width: 45vw; 
-    height: 25vw;
+    width: 35vw; 
+    height: 20vw;
     object-fit: cover;
-    padding: 10px;
 }
 
 .portafolio .galeria .proyecto .overlay{
     position: absolute;
     top: 0;
-    width: 45vw;
-    height: 25vw;
+    width: 35vw; 
+    height: 20vw;
     text-align: center;
     background: linear-gradient(hsla(211, 93%, 46%, 0.584), hsla(211, 93%, 46%, 0.584));
     display: flex;
@@ -842,6 +841,7 @@ footer .arriba{
 /*SECCION RESPONSIVE*/
 
 @media screen and (max-width:980px){
+
     nav{
         display: none;
     }
